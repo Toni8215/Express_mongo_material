@@ -1,0 +1,13 @@
+
+.owner
+{
+    width:200px;
+    height: 200px;
+    margin-left: 20px;
+}
+
+
+#card{
+    max-width:400px;
+    background:#b2b2ff; 
+}

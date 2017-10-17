@@ -1,0 +1,18 @@
+
+ .repo{
+    width:300px;
+    list-style:none;
+    cursor: pointer;
+    position: relative;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+}
+.image{
+    width: 200px;
+    height: 200px;
+}
+md-chip {
+    clear: left;
+  }

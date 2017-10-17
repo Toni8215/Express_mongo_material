@@ -1,0 +1,25 @@
+<mat-grid-list *ngIf="this.gitservice.tech" cols = "3">
+    
+        <mat-grid-tile cols="3" rowHeight="2:1"*ngFor="let tech of this.gitservice.tech">
+          
+            <mat-card  class="mat-elevation-z4" id=card>
+              <mat-card-header>
+                  <mat-card-title>Repo-Name : {{tech.name}}<br></mat-card-title>
+              <mat-card-subtitle>
+                  Id : {{tech.id}} <br>
+              </mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image src="{{tech.owner.avatar_url}}" alt="owner" class="owner img-responsive"><br>
+              <mat-card-content>
+                  Repo Created: {{tech.created_at}} <br>
+                  Repo Updated : {{tech.updated_at}}<br>
+              </mat-card-content>
+              <mat-card-actions>
+                  <button mat-button id="saved_repo" (click) = RepoId(tech)>Save Repo</button>
+                </mat-card-actions>
+            </mat-card>
+          
+          </mat-grid-tile>
+</mat-grid-list>
+              
+

@@ -1,0 +1,16 @@
+.owner
+{
+    width:200px;
+    height: 200px;
+    margin-left: 20px;
+}
+
+#saved_repo{
+    margin-left: 80px;
+}
+#card{
+    max-width:400px;
+    background:#b2b2ff; 
+}
+
+

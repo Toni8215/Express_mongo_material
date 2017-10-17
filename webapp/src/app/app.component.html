@@ -1,0 +1,49 @@
+<mat-toolbar mat-scroll-shrink color="primary">
+    
+    <span matTooltip="Home">
+      <a [routerLink]="['/main']" [routerLinkActive]="['active']">
+        <mat-icon>home</mat-icon>
+      </a>
+    </span>
+      <span>
+        <button mat-button>
+             
+          <h4>Github</h4>
+        </button>
+      </span>
+        <span matTooltip="Collection of saved Repos">
+       <a [routerLink]="['/saved']" [routerLinkActive]="['active']"><button mat-button>Saved Repos</button>
+        </a>
+        </span>
+      <button mat-button>Issues</button>
+      <button mat-button>Market Place</button>
+      <span class="example-fill-remaining-space"></span>
+        <span matTooltip="Existing User?">
+          <a [routerLink]="['/login']" [routerLinkActive]="['active']"><button mat-button>Sign In</button>
+        </a>
+        </span>
+        <span matTooltip="New User?">
+          <a [routerLink]="['/register']" [routerLinkActive]="['active']"><button mat-button>Register</button>
+            </a>
+            </span>
+    </mat-toolbar>
+<router-outlet></router-outlet>
+<footer class=foot>
+  <mat-toolbar md-scroll-shrink color="primary">
+   
+        <button mat-button>About Us</button>
+        <button mat-button>Privacy Policy</button>
+        <button mat-button>Open Source</button>
+        <button mat-button>API</button>
+        
+      <span class="example-fill-remaining-space">
+              <img class="icon" src="/assets/git_footer.png" alt="GitHub">
+      </span>
+      
+      <button mat-button>Contact GitHub</button>
+  </mat-toolbar>
+</footer>
+  
+
+
+

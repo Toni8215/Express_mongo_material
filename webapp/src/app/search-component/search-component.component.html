@@ -1,0 +1,20 @@
+<div class="container image">
+    <img class="logo1" src="../assets/github-512.png" alt="GitHub">
+</div>
+<span class="searchBar">
+        <mat-form-field>
+            <input matInput [(ngModel)]="username" id="search_git" placeholder="Search GitHub  ">
+          </mat-form-field>
+<span matTooltip="Search By User">
+  <button mat-button (click)="load_userdata();load_userdata_repos();">
+              User</button>
+</span>
+<span matTooltip="Search By Technology">
+<button mat-button (click)="load_technology();">Technology</button>
+</span>
+</span>
+
+
+  
+  
+ 
